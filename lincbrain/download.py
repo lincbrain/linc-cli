@@ -295,6 +295,7 @@ class Downloader:
                             asset.path,
                         )
                         mtime = asset.modified
+                        # Aaron
                     _download_generator = _download_file(
                         asset.get_download_file_iter(),
                         download_path,

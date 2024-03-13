@@ -352,6 +352,7 @@ class LocalFileAsset(LocalAsset):
         yield {"status": "initiating upload"}
         lgr.debug("%s: Beginning upload", asset_path)
         total_size = pre_upload_size_check(self.filepath)
+        # Aaron
         try:
             resp = client.post(
                 "/uploads/initialize/",
