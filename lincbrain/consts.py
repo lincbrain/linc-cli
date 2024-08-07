@@ -121,8 +121,8 @@ instancehost = os.environ.get("DANDI_INSTANCEHOST", "localhost")
 # TODO: Also add docs for what each of these values should map to
 
 known_instances = {
-    "dandi": DandiInstance(
-        "dandi",
+    "lincbrain": DandiInstance(
+        "lincbrain",
         "https://lincbrain.org",
         "https://api.lincbrain.org/api",
     ),
