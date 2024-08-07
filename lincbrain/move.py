@@ -789,7 +789,7 @@ def move(
     dest: str,
     regex: bool = False,
     existing: MoveExisting = MoveExisting.ERROR,
-    dandi_instance: str | DandiInstance = "dandi",
+    dandi_instance: str | DandiInstance = "lincbrain",
     dandiset: Path | str | None = None,
     work_on: MoveWorkOn = MoveWorkOn.AUTO,
     devel_debug: bool = False,

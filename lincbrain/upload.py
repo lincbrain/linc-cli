@@ -70,7 +70,7 @@ def upload(
     paths: Sequence[str | Path] | None = None,
     existing: UploadExisting = UploadExisting.REFRESH,
     validation: UploadValidation = UploadValidation.REQUIRE,
-    dandi_instance: str | DandiInstance = "dandi",
+    dandi_instance: str | DandiInstance = "lincbrain",
     allow_any_path: bool = False,
     upload_dandiset_metadata: bool = False,
     devel_debug: bool = False,

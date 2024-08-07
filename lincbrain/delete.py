@@ -192,7 +192,7 @@ class Deleter:
 
 def delete(
     paths: Iterable[str],
-    dandi_instance: str | DandiInstance = "dandi",
+    dandi_instance: str | DandiInstance = "lincbrain",
     devel_debug: bool = False,
     jobs: int | None = None,
     force: bool = False,
