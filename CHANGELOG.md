@@ -1,3 +1,17 @@
+# 0.11.3 (Fri Nov 15 2024)
+
+#### 🐛 Bug Fix
+
+- Trivial change to release new version [#65](https://github.com/lincbrain/linc-cli/pull/65) (aaronkanzer@Aarons-MacBook-Pro.local [@aaronkanzer](https://github.com/aaronkanzer))
+- Bump dandischema to 0.10.4 [#64](https://github.com/lincbrain/linc-cli/pull/64) (aaronkanzer@Aarons-MacBook-Pro.local [@aaronkanzer](https://github.com/aaronkanzer))
+
+#### Authors: 2
+
+- [@aaronkanzer](https://github.com/aaronkanzer)
+- Aaron Kanzer (aaronkanzer@Aarons-MacBook-Pro.local)
+
+---
+
 # 0.11.2 (Mon Aug 26 2024)
 
 #### 🐛 Bug Fix
