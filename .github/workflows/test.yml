@@ -1,12 +1,17 @@
 name: Tests
 
+#on:
+#  push:
+#    branches:
+#      - master
+#  pull_request:
+#  schedule:
+#    - cron: '0 6 * * *'
+
+
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-  schedule:
-    - cron: '0 6 * * *'
+  - push
+  - pull_request
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref_name }}
@@ -89,10 +94,6 @@ jobs:
         echo HOME=/tmp/nfsmount/home >> "$GITHUB_ENV"
         echo DANDI_DEVEL_INSTRUMENT_REQUESTS_SUPERLEN=1 >> "$GITHUB_ENV"
 
-    - name: Use scheduled test configuration
-      if: github.event_name == 'schedule'
-      run: echo PYTEST_ADDOPTS=--scheduled >> "$GITHUB_ENV"
-
     - name: Run all tests
       if: matrix.mode != 'dandi-api'
       run: |
@@ -110,20 +111,20 @@ jobs:
     - name: Run Dandi API tests only
       if: matrix.mode == 'dandi-api'
       run: |
-        python -m pytest -s -v --cov=dandi --cov-report=xml --dandi-api dandi
+        python -m pytest -s -v --cov=dandi --cov-report=xml --dandi-api lincbrain
 
     - name: Dump Docker Compose logs
       if: failure() && startsWith(matrix.os, 'ubuntu')
       run: |
-        docker compose \
-          -f dandi/tests/data/dandiarchive-docker/docker-compose.yml \
+        docker-compose \
+          -f lincbrain/tests/data/dandiarchive-docker/docker-compose.yml \
           logs --timestamps
 
     - name: Shut down Docker Compose
       if: startsWith(matrix.os, 'ubuntu')
       run: |
-        docker compose \
-          -f dandi/tests/data/dandiarchive-docker/docker-compose.yml \
+        docker-compose \
+          -f lincbrain/tests/data/dandiarchive-docker/docker-compose.yml \
           down -v
 
     - name: Upload coverage to Codecov

@@ -15,4 +15,5 @@ pip-wheel-metadata/
 sandbox/
 venv/
 venvs/
+.pypirc
 .DS_Store
