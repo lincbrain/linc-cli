@@ -397,7 +397,7 @@ def plus_or_dot(pieces: Dict[str, Any]) -> str:
 
 
 def render_pep440(pieces: Dict[str, Any]) -> str:
-    """Build up version string, with post-release "local version identifier".
+    """Build up version string, with post-release "local version identifier ".
 
     Our goal: TAG[+DISTANCE.gHEX[.dirty]] . Note that if you
     get a tagged build and then dirty it, you'll get TAG+0.gHEX.dirty
