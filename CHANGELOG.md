@@ -1,3 +1,16 @@
+# 0.11.4 (Tue Nov 19 2024)
+
+#### 🐛 Bug Fix
+
+- Update README to redirect to DANDI CLI [#67](https://github.com/lincbrain/linc-cli/pull/67) (aaronkanzer@Aarons-MacBook-Pro.local [@aaronkanzer](https://github.com/aaronkanzer))
+
+#### Authors: 2
+
+- [@aaronkanzer](https://github.com/aaronkanzer)
+- Aaron Kanzer (aaronkanzer@Aarons-MacBook-Pro.local)
+
+---
+
 # 0.11.3 (Fri Nov 15 2024)
 
 #### 🐛 Bug Fix
