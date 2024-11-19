@@ -1,5 +1,7 @@
 # LINC Brain Client
 
+## The LINC Brain Client has been deprecated as of November 2024. Users should instead refer to the [DANDI CLI PyPI package](https://pypi.org/project/dandi/) and [DANDI CLI repository](https://github.com/dandi/dandi-cli).
+
 [![Tests](https://github.com/lincbrain/linc-cli/workflows/Tests/badge.svg)](https://github.com/lincbrain/linc-cli/actions?query=workflow%3ATests)
 [![GitHub release](https://img.shields.io/github/release/lincbrain/linc-cli.svg)](https://GitHub.com/lincbrain/linc-cli/releases/)
 [![PyPI version fury.io](https://badge.fury.io/py/lincbrain-cli.svg)](https://pypi.python.org/pypi/lincbrain-cli/)
